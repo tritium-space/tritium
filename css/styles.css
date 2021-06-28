@@ -8,9 +8,34 @@
     src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 
+:root {
+    --primary-background-color: #141314;
+    --secondary-background-color: #222021;
+    --tertiary-background-color: #d0c9c1;
+    --primary-font-color: #FBFAF5;
+    /** header */
+    --header-enlarged-height: 100px;
+    --header-shrunk-height: 70px;
+    --header-enlarged-font-size: 40px;
+    --header-shrunk-font-size: 25px;
+    --header-title-line-height: 30px;
+    --header-subtitle-width: 120px;
+    --header-subtitle-translate-y: -10px;
+    --header-transition-duration: .3s;
+    --header-fade-in-color: #444444;
+    --header-title-fade-in-duration: 2.2s;
+    /** main */
+    --main-width: 70%;
+    --main-max-width: 700px;
+    /** footer */
+    --footer-height: 100px;
+    /** shadow */
+    --bottom-shadow: 0px 9px 9px -3px rgba(0, 0, 0, 0.28);
+}
+
 body, html {
     margin: 0;
-    background-color: #222021;
-    color: #FBFAF5;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-font-color);
     font-family: "Poppins Light"
 }
