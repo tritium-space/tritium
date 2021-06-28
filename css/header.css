@@ -1,23 +1,57 @@
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
     background-color: #141314;
     box-shadow: 0px 9px 9px -3px rgba(0, 0, 0, 0.28);;
+    z-index: 1000;
+}
+
+.title-container {
+    height: 100%;
+    animation: title-fade-in 2.2s;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: fade-in 2.2s;
-    z-index: 1000;
+}
+
+.enlarged {
+    height: 100px;
+    animation: header-enlarge .3s;
+}
+
+.shrunk {
+    height: 70px;
+    animation: header-shrink .3s;
+}
+
+.visible {
+    opacity: 1;
+    animation: header-show-subtitle .3s;
+    transform: translateY(0);
+}
+
+.invisible {
+    opacity: 0;
+    animation: header-hide-subtitle .3s;
+    transform: translateY(-10px);
 }
 
 .title {
-    font-size: 40px;
     margin: 0;
     line-height: 30px;
+}
+
+.title .title-enlarged {
+    font-size: 40px;
+    animation: header-title-enlarge .3s;
+}
+
+.title .title-shrunk {
+    font-size: 25px;
+    animation: header-title-shrink .3s;
 }
 
 .subtitle {
