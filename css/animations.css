@@ -1,0 +1,11 @@
+@keyframes fade-in {
+    0% {
+        color: #444444;
+    }
+    10% {
+        color: #444444;
+    }
+    100% {
+        color: #FBFAF5;
+    }
+}

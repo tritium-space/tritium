@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Poppins Light;
+    src: url(../font/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Medium";
+    src: url(../font/Poppins/Poppins-Medium.ttf);
+}
+
+body, html {
+    margin: 0;
+    background-color: #222021;
+    color: #FBFAF5;
+    font-family: "Poppins Light"
+}
