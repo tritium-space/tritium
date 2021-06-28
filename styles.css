@@ -27,6 +27,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: fade-in 2.2s;
 }
 
 .title {
@@ -40,4 +41,13 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 120px;
+}
+
+@keyframes fade-in {
+    0% {
+        color: #444444;
+    }
+    100% {
+        color: #FBFAF5;
+    }
 }
