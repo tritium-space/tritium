@@ -16,68 +16,6 @@ header {
     top: 0;
 }
 
-.atom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.atom-visible {
-    opacity: 1;
-    animation: show-atom 1s;
-    transform: translateY(0);
-}
-
-.atom-hidden {
-    opacity: 0;
-    animation: hide-atom 1s;
-    transform: translateY(var(--header-subtitle-translate-y));
-}
-
-.ring {
-    height: 60px;
-    width: 60px;
-    border: solid 1px white;
-    border-radius: 100%;
-    position: absolute;
-    animation: rotate 2s linear infinite;
-}
-
-.ring:after {
-    left: -5px;
-    top: 50%;
-    position: absolute;
-    content: "";
-    height: 10px;
-    width: 10px;
-    border-radius: 100%;
-    background-color: white;
-}
-
-#H3 {
-    text-align: center;
-    width: 28px;
-    height: 28px;
-}
-
-.H {
-    position: relative;
-    height: 100%;
-    font-size: 100%;
-}
-
-.H::before {
-    content: "3";
-    height: 10px;
-    width: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: .6em;
-    line-height: 15px;
-}
-
 .title-container {
     height: 100%;
     animation: title-fade-in var(--header-title-fade-in-duration);

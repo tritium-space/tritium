@@ -71,7 +71,7 @@ main .scroll-body {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: white;
+    background-color: var(--primary-background-color);
     width: 460px;
     height: 260px;
     z-index: 3;
