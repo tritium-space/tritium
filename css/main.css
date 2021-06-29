@@ -1,0 +1,18 @@
+main {
+    width: 100%;
+    position: absolute;
+    height: 2000px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--footer-height);
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--bottom-shadow);
+}
+
+main .scroll-body {
+    background-color: var(--tertiary-background-color);
+    width: var(--main-width);
+    max-width: var(--main-max-width);
+    height: 100%;
+}
