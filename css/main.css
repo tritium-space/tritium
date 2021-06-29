@@ -2,7 +2,9 @@ main {
     width: 100%;
     height: 2000px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: var(--footer-height);
     margin-top: var(--header-enlarged-height);
     position: relative;
@@ -10,43 +12,51 @@ main {
     box-shadow: var(--bottom-shadow);
 }
 
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main .scroll-body {
     background-color: var(--tertiary-background-color);
     width: var(--main-width);
     max-width: var(--main-max-width);
     height: 100%;
+    box-shadow: var(--full-shadow);
 }
 
 .about {
     height: 1000px;
-    border: solid red 1px;
 }
 
-.test {
-    border: solid red 1px;
+.article-container {
     position: relative;
     padding: 2em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: var(--quadriary-background-color);
+    box-shadow: var(--full-shadow);
 }
 
-.a {
+article {
     visibility: hidden;
     opacity: 0;
     transform: translateY(-30px);
 }
 
-.test-visible {
+.dropped {
     visibility: visible;
     transform: translateY(0);
     opacity: 1;
     animation: about-us 1s;
-}
-
-#test {
-    position: absolute;
 }
 
 .computer-container {

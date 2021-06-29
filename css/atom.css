@@ -2,7 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+}
+
+.atom-hidden {
+    opacity: 0;
+    animation: hide-atom 1s;
 }
 
 .ring {
@@ -11,7 +15,7 @@
     border: solid 1px white;
     border-radius: 100%;
     position: absolute;
-    animation: rotate 2s linear infinite;
+    animation: rotate 1.5s linear infinite;
 }
 
 .ring:after {

@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="css/header-animations.css">
 <link rel="stylesheet" href="css/main-animations.css">
 
-<body>
+<body class="no-overflow">
     <header class="enlarged" id="header">
         <div class="title-container">
             <h1 class="title" id="title">Tritium</h1>
@@ -32,10 +32,18 @@
         </div>
     </header>
 
+    <div class="overlay" id="overlay">
+        <div class="atom" id="atom">
+            <div class="ring"></div>
+            <div id="H3">
+                <div class="H">H</div>
+            </div>
+        </div>
+    </div>
     <main>
         <div class="scroll-body">
             <div class="about">
-                <div class="computer-container">
+                <!-- <div class="computer-container">
                     <div class="image-container">
                         <img id="computer" src="assets/hollow.png">
                         <div class="display" id="display">
@@ -49,26 +57,21 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="test">
-                <div class="a">
+            <section class="article-container">
+                <article class="drop-in">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem sunt commodi dignissimos
                     ipsam fugit laudantium adipisci aut aspernatur consequuntur molestias praesentium a asperiores iure
                     tenetur modi ipsa, fugiat eius delectus!
-                </div>
-                <div class="a">
+                </article>
+                <article class="drop-in">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem sunt commodi dignissimos
                     ipsam fugit laudantium adipisci aut aspernatur consequuntur molestias praesentium a asperiores iure
                     tenetur modi ipsa, fugiat eius delectus!
-                </div>
-                <div class="a">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, quam debitis excepturi iste enim
-                    hic beatae vitae eos tenetur, eveniet, asperiores dignissimos quod. Quo ratione deserunt tenetur
-                    velit atque quisquam?
-                </div>
-                <span id="test"></span>
-            </div>
+                </article>
+                <span id="visibility-anchor"></span>
+            </section>
         </div>
     </main>
 
@@ -77,7 +80,7 @@
     </footer>
 </body>
 
-<script src="lib/main.js"></script>
 <script src="lib/scrollcapture.js"></script>
+<script src="lib/main.js"></script>
 
 </html>
