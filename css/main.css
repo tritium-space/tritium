@@ -23,6 +23,12 @@ main {
     align-items: center;
 }
 
+.overlay-vanish {
+    transform: translateY(-100vh);
+    opacity: 0;
+    animation: overlay-vanish 2s;
+}
+
 main .scroll-body {
     background-color: var(--tertiary-background-color);
     width: var(--main-width);

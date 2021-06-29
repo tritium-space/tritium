@@ -15,7 +15,7 @@
     border: solid 1px white;
     border-radius: 100%;
     position: absolute;
-    animation: rotate 1.5s linear infinite;
+    animation: rotate 3.14s linear infinite;
 }
 
 .ring:after {
