@@ -14,12 +14,14 @@
     --tertiary-background-color: #d0c9c1;
     --primary-font-color: #FBFAF5;
     /** header */
-    --header-enlarged-height: 100px;
+    --header-enlarged-height: 90px;
     --header-shrunk-height: 70px;
     --header-enlarged-font-size: 40px;
     --header-shrunk-font-size: 25px;
     --header-title-line-height: 30px;
-    --header-subtitle-width: 120px;
+    --header-border-width: 130px;
+    --header-subtitle-width: 100px;
+    --header-subtitle-height: 20px;
     --header-subtitle-translate-y: -10px;
     --header-transition-duration: .3s;
     --header-fade-in-color: #444444;
