@@ -12,11 +12,27 @@ header {
     position: absolute;
     height: 100%;
     width: 90px;
+    left: 0;
+    top: 0;
+}
+
+.atom {
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 0;
-    top: 0;
+    height: 100%;
+}
+
+.atom-visible {
+    opacity: 1;
+    animation: show-atom 1s;
+    transform: translateY(0);
+}
+
+.atom-hidden {
+    opacity: 0;
+    animation: hide-atom 1s;
+    transform: translateY(var(--header-subtitle-translate-y));
 }
 
 .ring {
@@ -28,7 +44,7 @@ header {
     animation: rotate 2s linear infinite;
 }
 
-.ring::after {
+.ring:after {
     left: -5px;
     top: 50%;
     position: absolute;

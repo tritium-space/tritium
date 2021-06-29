@@ -92,3 +92,25 @@
         transform: rotate3d(1, 1, 1, 360deg);
     }
 }
+
+@keyframes hide-atom {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(var(--header-subtitle-translate-y));
+    }
+}
+
+@keyframes show-atom {
+    0% {
+        opacity: 0;
+        transform: translateY(var(--header-subtitle-translate-y));
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

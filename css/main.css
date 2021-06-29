@@ -16,3 +16,35 @@ main .scroll-body {
     max-width: var(--main-max-width);
     height: 100%;
 }
+
+.about {
+    height: 1000px;
+    border: solid red 1px;
+}
+
+.test {
+    border: solid red 1px;
+    position: relative;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.a {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.test-visible {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    animation: about-us 1s;
+}
+
+#test {
+    position: absolute;
+}
