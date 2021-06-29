@@ -8,6 +8,60 @@ header {
     z-index: 1000;
 }
 
+.header-right {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+
+.ring {
+    height: 65%;
+    width: 65%;
+    border: solid 1px white;
+    border-radius: 100%;
+    position: absolute;
+    animation: rotate 1.6s infinite linear;
+}
+
+.ring::after {
+    left: -5px;
+    top: 50%;
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+#H3 {
+    text-align: center;
+    width: 28px;
+    height: 28px;
+}
+
+.H {
+    position: relative;
+    height: 100%;
+    font-size: 100%;
+}
+
+.H::before {
+    content: "3";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: .6em;
+    line-height: 15px;
+}
+
 .title-container {
     height: 100%;
     animation: title-fade-in var(--header-title-fade-in-duration);
@@ -36,8 +90,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: var(--header-subtitle-width);
     position: relative;
+    width: var(--header-subtitle-width);
 }
 
 .visible {

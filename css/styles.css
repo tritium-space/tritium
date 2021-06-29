@@ -13,6 +13,8 @@
     --secondary-background-color: #222021;
     --tertiary-background-color: #d0c9c1;
     --primary-font-color: #FBFAF5;
+
+    --logo-height: 40px;
     /** header */
     --header-enlarged-height: 90px;
     --header-shrunk-height: 70px;
