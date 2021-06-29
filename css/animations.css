@@ -82,10 +82,13 @@
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
     }
-    to {
-        transform: rotate(359deg);
+    50% {
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
     }
 }

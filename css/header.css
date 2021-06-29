@@ -10,7 +10,7 @@ header {
 
 .header-right {
     position: absolute;
-    height: 90px;
+    height: 100%;
     width: 90px;
     display: flex;
     justify-content: center;
@@ -20,12 +20,12 @@ header {
 }
 
 .ring {
-    height: 65%;
-    width: 65%;
+    height: 60px;
+    width: 60px;
     border: solid 1px white;
     border-radius: 100%;
     position: absolute;
-    animation: rotate 1.6s infinite linear;
+    animation: rotate 2s linear infinite;
 }
 
 .ring::after {
