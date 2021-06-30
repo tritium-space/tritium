@@ -41,7 +41,6 @@
     position: relative;
     height: 100%;
     font-size: 100%;
-    animation: atom-bob 4s linear infinite;
 }
 
 .H::before {
