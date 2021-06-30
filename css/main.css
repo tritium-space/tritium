@@ -44,6 +44,7 @@ main .scroll-body {
     justify-content: center;
     align-items: center;
     width: var(--main-max-width);
+    max-width: 100vw;
     height: 200px;
     background-color: var(--tertiary-background-color);
     box-shadow: var(--full-shadow);
@@ -52,6 +53,23 @@ main .scroll-body {
 .intro-bar > span {
     margin-right: .5em;
     animation: typewriter .2s;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project {
+    flex: 1;
+    margin: 0 3em;
+    height: 300px;
+}
+
+.project > img {
+    width: 100%;
 }
 
 .article-container {
