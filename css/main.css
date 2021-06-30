@@ -31,23 +31,22 @@ main {
 }
 
 main .scroll-body {
-    background-color: var(--tertiary-background-color);
-    width: var(--main-width);
-    max-width: var(--main-max-width);
+    width: 100%;
     height: 100%;
     box-shadow: var(--full-shadow);
-}
-
-.about {
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .intro-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: var(--main-max-width);
     height: 200px;
+    background-color: var(--tertiary-background-color);
+    box-shadow: var(--full-shadow);
 }
 
 .intro-bar > span {
@@ -62,8 +61,6 @@ main .scroll-body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: var(--quadriary-background-color);
-    box-shadow: var(--full-shadow);
 }
 
 article {
@@ -76,7 +73,8 @@ article {
     visibility: visible;
     transform: translateY(0);
     opacity: 1;
-    animation: about-us 1s;
+    animation-name: about-us;
+    animation-duration: 2s;
 }
 
 .computer-container {
