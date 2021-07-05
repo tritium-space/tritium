@@ -11,19 +11,6 @@
     }
 }
 
-@keyframes overlay-vanish {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-        height: 100vh;
-    }
-    100% {
-        transform: translateY(-100vh);
-        opacity: 0;
-        height: 0;
-    }
-}
-
 @keyframes typewriter {
     0% {
         transform: rotateY(360deg);

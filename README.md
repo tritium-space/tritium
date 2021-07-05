@@ -1,4 +1,6 @@
 # ladingpage
 The Tritium landing page
 
-https://medium.com/@nathan_149/install-nginx-on-amazon-ec2-in-5-minutes-get-a-web-server-up-and-running-3516fd06b76
+https://docs.nginx.com/nginx/deployment-guides/amazon-web-services/ec2-instances-for-nginx/
+https://docs.nginx.com/nginx/deployment-guides/setting-up-nginx-demo-environment/
+https://jay315.medium.com/installing-ssl-tls-certificates-on-aws-ec2-with-ubuntu-and-nginx-configuration-eb156a55f7e7
