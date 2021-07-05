@@ -6,14 +6,7 @@ header {
     background-color: var(--primary-background-color);
     box-shadow: var(--bottom-shadow);
     z-index: 2;
-}
-
-.header-right {
-    position: absolute;
-    height: 100%;
-    width: 90px;
-    left: 0;
-    top: 0;
+    transition: height var(--header-transition-duration);
 }
 
 .title-container {
@@ -27,12 +20,10 @@ header {
 
 .enlarged {
     height: var(--header-enlarged-height);
-    animation: header-enlarge var(--header-transition-duration);
 }
 
 .shrunk {
     height: var(--header-shrunk-height);
-    animation: header-shrink var(--header-transition-duration);
 }
 
 .title {

@@ -10,24 +10,6 @@
     }
 }
 
-@keyframes header-shrink {
-    0% {
-        height: var(--header-enlarged-height);
-    }
-    100% {
-        height: var(--header-shrunk-height);
-    }
-}
-
-@keyframes header-enlarge {
-    0% {
-        height: var(--header-shrunk-height);
-    }
-    100% {
-        height: var(--header-enlarged-height);
-    }
-}
-
 @keyframes header-title-shrink {
     0% {
         font-size: var(--header-enlarged-font-size);

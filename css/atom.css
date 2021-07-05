@@ -5,11 +5,6 @@
     margin: 1em;
 }
 
-.atom-hidden {
-    opacity: 0;
-    animation: hide-atom 1s;
-}
-
 .ring {
     height: 60px;
     width: 60px;
