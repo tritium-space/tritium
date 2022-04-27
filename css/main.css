@@ -1,3 +1,7 @@
+header {
+    visibility: hidden;
+}
+
 .spa {
     display: flex;
     flex-direction: row;

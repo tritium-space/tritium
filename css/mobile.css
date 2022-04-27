@@ -1,9 +1,119 @@
 @media only screen and (max-width: 600px) {
+    header {
+        visibility: visible;
+    }
+
     aside {
         max-width: 0;
         visibility: hidden;
     }
-    body {
-        background-color: lightblue;
-    }
+}
+
+header {
+    position: fixed;
+    height: var(--mobile-header-height);
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo-container {
+    height: 100%;
+    padding: .6em 0;
+}
+
+.hamburger {
+    position: absolute;
+    left: 1em;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger.open span:nth-child(1) {
+    -webkit-transform: translateY(11px);
+    -ms-transform: translateY(11px);
+    -o-transform: translateY(11px);
+    transform: translateY(11px);
+}
+
+.hamburger.open span:nth-child(3) {
+    -webkit-transform: translateY(-11px);
+    -ms-transform: translateY(-11px);
+    -o-transform: translateY(-11px);
+    transform: translateY(-11px);
+}
+
+header .logo-container img {
+    height: 100%;
+}
+
+.mobile-navigation {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FF0266;
+    transform: translateX(-100vw);
+    transition: transform .5s;
+}
+
+.mobile-navigation--visible {
+    transform: translateX(-25vw);
+}
+
+.mobile-navigation .container {
+    position: inherit;
+    right: 0;
+    top: var(--mobile-header-height);
+    bottom: 0;
+    width: var(--mobile-menu-width);
+}
+
+.links {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.power {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    height: 2.5em;
 }
