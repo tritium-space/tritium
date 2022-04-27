@@ -11,30 +11,9 @@
 :root {
     --primary-background-color: #000000;
     --secondary-background-color: #070707;
-    --tertiary-background-color: #0f0f0f;
-    --quadriary-background-color: #2f2f2f;
+
     --primary-font-color: #FBFAF5;
 
-    --logo-height: 40px;
-    /** header */
-    --header-enlarged-height: 90px;
-    --header-shrunk-height: 70px;
-    --header-enlarged-font-size: 40px;
-    --header-shrunk-font-size: 25px;
-    --header-title-line-height: 30px;
-    --header-border-width: 130px;
-    --header-subtitle-width: 100px;
-    --header-subtitle-height: 20px;
-    --header-subtitle-translate-y: -10px;
-    --header-transition-duration: .3s;
-    --header-fade-in-color: #444444;
-    --header-title-fade-in-duration: 2.2s;
-    /** main */
-    --main-width: 70%;
-    --main-max-width: 700px;
-    /** footer */
-    --footer-height: 100px;
-    /** shadow */
     --full-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --bottom-shadow: 0px 9px 9px -3px rgba(0, 0, 0, 0.28);
 }
@@ -46,3 +25,14 @@ body, html {
     font-family: "Poppins Light"
 }
 
+.full-shadow {
+    box-shadow: var(--full-shadow);
+}
+
+.bottom-shadow {
+    box-shadow: var(--bottom-shadow);
+}
+
+.upper-shadow {
+    box-shadow: var(--upper-shadow);
+}
