@@ -48,21 +48,29 @@ header {
 }
 
 .content .slide .display {
-    height: 200px;
-    width: 60%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.content .slide .display:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
 .content .slide .display .portrait {
-    height: 100%;
     border-radius: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--portrait-dimensions);
+    height: var(--portrait-dimensions);
 }
 
 .content .slide .display .portrait img {
     height: 100%;
+    width: 100%;
 }
 
 .link {
@@ -75,3 +83,14 @@ header {
     color: var(--primary-accent-color);
 }
 
+.expose {
+    height: 100vh;
+    overflow-x: scroll;
+    float: left;
+}
+
+.expose .project {
+    height: 90vh;
+    border: solid red 1px;
+    width: 400px;
+}

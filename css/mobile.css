@@ -7,6 +7,23 @@
         max-width: 0;
         visibility: hidden;
     }
+
+    .display {
+        flex-direction: column;
+    }
+
+    .display:nth-child(odd) {
+        flex-direction: column !important;
+    }
+
+    .display h2 {
+        text-align: center;
+    }
+
+    .content .slide .display .portrait {
+        height: var(--mobile-portrait-dimensions);
+        width: var(--mobile-portrait-dimensions);
+    }
 }
 
 header {
@@ -74,7 +91,7 @@ header .logo-container img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #FF0266;
+    background-color: var(--secondary-background-color);
     transform: translateX(-100vw);
     transition: transform .5s;
 }
