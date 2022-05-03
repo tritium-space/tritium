@@ -84,13 +84,31 @@ header {
 }
 
 .expose {
-    height: 100vh;
-    overflow-x: scroll;
-    float: left;
+    max-height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 .expose .project {
-    height: 90vh;
-    border: solid red 1px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expose .project .project-box {
+    height: 300px;
     width: 400px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--secondary-background-color);
+}
+
+.expose .project .project-box .project-thumbnail {
+    height: 180px;
+}
+
+.expose .project .project-box .project-thumbnail img {
+    width: 100%;
+    max-height: 100%;
 }
